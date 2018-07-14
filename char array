@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    char *p;
+    int y=51;
+    p="Hello";
+    printf("%c %d %s\n",*&*p,p,p);
+    //printf("\n%d",'$');
+    return 0;
+}
