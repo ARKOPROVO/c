@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    char s[]={'a','b','c','\n','c','\0'};//ascii value of '\n' is 10 and '\0' is 0 
+    char *p,*str,*str1;
+    p=&s[3];
+    str=p;
+    str1=s;
+    printf("%c",++*p + ++*str1 - 32);
+}
