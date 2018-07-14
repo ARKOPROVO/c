@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<malloc.h>
+main()
+{
+	struct xx
+	{
+		int x;
+		char* name;
+	};
+	struct xx *s;
+	scanf("%d",&(s->x));
+	s->name=(char*)malloc((s->x)*sizeof(char));
+	scanf("%s",(s->name));
+	printf("%d",(s->x));
+	printf("%s",(s->name));
+	/* correct verion below
+	struct xx s;
+	scanf("%d",&(s.x));
+	s.name=(char*)malloc((s.x)*sizeof(char));
+	scanf("%s",(s.name));
+	printf("%d",s.x);
+	printf("\n%s",s.name);
+	*/
+}
