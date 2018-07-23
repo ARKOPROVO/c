@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+char* fun(char* s);
+int main()
+{
+	
+	//char* s="hello";
+	char* rev[100];
+	char* temp[100];
+	//gets(temp);
+	printf("Enter string\n");
+	scanf("%[^\n]%*c",temp);
+	*rev=fun(temp);
+	printf("%s",*rev);
+	//printf("%s",temp);
+}
+
+char* fun(char* s)
+{
+    //char* rev=strrev(s);
+	return s;
+}
